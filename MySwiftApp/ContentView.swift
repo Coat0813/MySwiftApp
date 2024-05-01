@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var flag = false
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -15,6 +16,10 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("こんにちは")
             Button("push me") {
+                flag = true
+            }
+            if(flag){
+                Text("!!")
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
             }
         }

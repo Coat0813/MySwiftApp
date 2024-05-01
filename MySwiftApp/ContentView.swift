@@ -14,7 +14,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("こんばんは")
+            Text("全然わかんない")
             Button("push me") {
                 flag = true
             }
